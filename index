@@ -4,147 +4,224 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ShinePro Mobile Detailing</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary: #4fd1c5;
+      --secondary: #2d3748;
+      --accent: #f56565;
+      --bg: #f9fafb;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background: #0b3d91;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    nav {
-      background: #062c6a;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      padding: 1rem;
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      background: #041f4a;
-    }
-
-    section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .services ul {
-      list-style: none;
       padding: 0;
     }
 
-    .services li {
-      background: #fff;
-      margin: 1rem 0;
-      padding: 1rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--secondary);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4fd1c5, #81e6d9);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav a {
+      padding: 1rem 1.5rem;
+      display: block;
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
     }
 
     form {
-      background: #fff;
+      background: white;
+      border-radius: 1rem;
       padding: 2rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
     input, textarea {
       width: 100%;
       padding: 1rem;
       margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      border: 2px solid #e2e8f0;
+      border-radius: 0.5rem;
+      font-family: inherit;
     }
 
     button {
-      background: #0b3d91;
+      background: var(--primary);
       color: white;
       padding: 1rem 2rem;
       border: none;
-      border-radius: 5px;
+      border-radius: 2rem;
+      font-weight: 600;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
 
     button:hover {
-      background: #062c6a;
+      background: #38b2ac;
     }
 
     footer {
-      background: #0b3d91;
-      color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 2rem;
+      background: #edf2f7;
+      font-size: 0.9rem;
+      color: #718096;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>ShinePro Mobile Detailing</h1>
-    <p>We bring the shine to you – anywhere, anytime.</p>
+    <h1>ShinePro Detailing</h1>
+    <p>✨ Premium mobile detailing at your doorstep</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <section id="about">
+  <section id="about" class="about">
     <h2>About Us</h2>
-    <p>ShinePro Mobile Detailing is your go-to solution for professional, high-quality car detailing – at your home or workplace. With years of experience and top-tier products, we treat every vehicle like it’s our own.</p>
+    <p>We’re not just cleaning your car — we’re restoring its vibe. ShinePro brings pro-level car care right to your home or office, with eco-friendly products and next-level shine.</p>
   </section>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>
-        <strong>Exterior Wash & Wax</strong><br/>
-        Hand wash, wax, tire shine – everything to make your car gleam.
-      </li>
-      <li>
-        <strong>Interior Deep Clean</strong><br/>
-        Vacuuming, carpet shampoo, dashboard conditioning, and more.
-      </li>
-      <li>
-        <strong>Full Detail Package</strong><br/>
-        The ultimate makeover: exterior + interior for a showroom finish.
-      </li>
-    </ul>
+  <section id="services">
+    <h2>What We Do</h2>
+    <div class="services">
+      <div class="service-card">
+        <strong>🚗 Exterior Wash & Wax</strong>
+        Hand wash, clay bar, and wax — the full gloss treatment.
+      </div>
+      <div class="service-card">
+        <strong>🧼 Interior Deep Clean</strong>
+        Full vacuum, shampoo, stain removal, and leather conditioning.
+      </div>
+      <div class="service-card">
+        <strong>💎 Full Detail</strong>
+        Interior + exterior perfection. Your ride, reborn.
+      </div>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Ready to book or have a question? Send us a message:</p>
+    <h2>Get in Touch</h2>
     <form action="https://formspree.io/f/yourformid" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <textarea name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
+      <button type="submit">Send It 🚀</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 ShinePro Mobile Detailing</p>
+    &copy; 2025 ShinePro Mobile Detailing. Built with ❤️ for the road.
   </footer>
 
 </body>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShinePro Mobile Detailing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #0b3d91;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #062c6a;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #041f4a;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      background: #fff;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #0b3d91;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #062c6a;
+    }
+
+    footer {
+      background: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ShinePro Mobile Detailing</h1>
+    <p>We bring the shine to you – anywhere, anytime.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>ShinePro Mobile Detailing is your go-to solution for professional, high-quality car detailing – at your home or workplace. With years of experience and top-tier products, we treat every vehicle like it’s our own.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>
+        <strong>Exterior Wash & Wax</strong><br/>
+        Hand wash, wax, tire shine – everything to make your car gleam.
+      </li>
+      <li>
+        <strong>Interior Deep Clean</strong><br/>
+        Vacuuming, carpet shampoo, dashboard conditioning, and more.
+      </li>
+      <li>
+        <strong>Full Detail Package</strong><br/>
+        The ultimate makeover: exterior + interior for a showroom finish.
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to book or have a question? Send us a message:</p>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ShinePro Mobile Detailing</p>
+  </footer>
+
+</body>
+</html>

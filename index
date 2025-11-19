@@ -3,46 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Central Shine Mobile Detailing — Our Mission</title>
+  <title>Central Shine Mobile Detailing</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans min-h-screen p-8">
-  <main class="max-w-3xl mx-auto">
-    <h1 class="text-4xl font-extrabold mb-6 text-amber-400">Central Shine Mobile Detailing</h1>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-slate-100 font-sans min-h-screen">
 
-    <section class="bg-slate-800/60 p-6 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-bold mb-4">A Professional Who Serves the Community</h2>
-      <p class="mb-4 leading-relaxed text-slate-300">
-        At Central Shine Mobile Detailing, we believe auto detailing is more than cleaning a vehicle — it's an act of service. We help make life easier for busy families, rideshare drivers, business owners, and everyday workers who need their vehicles to look their best without losing valuable time.
-      </p>
+  <!-- NAVIGATION -->
+  <nav class="max-w-6xl mx-auto p-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-amber-300">Central Shine Mobile Detailing</h1>
+    <div class="hidden md:flex gap-6 text-sm">
+      <a href="#mission" class="hover:text-amber-300">Mission</a>
+      <a href="#services" class="hover:text-amber-300">Services</a>
+      <a href="#community" class="hover:text-amber-300">Community</a>
+      <a href="#contact" class="hover:text-amber-300">Contact</a>
+    </div>
+    <button class="md:hidden bg-slate-700 px-3 py-2 rounded">☰</button>
+  </nav>
 
-      <h3 class="text-xl font-semibold mt-6 mb-2">Art. Science. Precision.</h3>
-      <p class="mb-4 leading-relaxed text-slate-300">
-        Auto detailing is a blend of craftsmanship and technical understanding. It's the art of restoring beauty, the science of using the right products and tools, and the precision of perfecting every surface — inside and out. Every detail matters, and every vehicle tells a story.
-      </p>
+  <!-- HERO SECTION -->
+  <header class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+    <div>
+      <h2 class="text-5xl font-extrabold leading-tight text-white">Professional Mobile Detailing<br><span class="text-amber-300">Serving Central Florida</span></h2>
+      <p class="mt-5 text-slate-300 text-lg">Where art, science, and precision come together to keep your vehicle shining — for busy families, rideshare drivers, business owners, and everyday workers.</p>
+      <div class="mt-8 flex gap-4">
+        <a href="#contact" class="bg-amber-400 text-slate-900 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">Book an Appointment</a>
+        <a href="#services" class="border border-slate-500 px-6 py-3 rounded-full font-semibold hover:bg-slate-700/40">View Services</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop" class="rounded-3xl shadow-2xl" alt="Car Detailing Photo" />
+    </div>
+  </header>
 
-      <h3 class="text-xl font-semibold mt-6 mb-2">What Drives Us</h3>
-      <ul class="list-disc pl-6 text-slate-300 space-y-2">
-        <li>Giving busy people their time back</li>
-        <li>Supporting rideshare and delivery drivers who rely on a clean workspace</li>
-        <li>Helping business owners maintain a professional image</li>
-        <li>Providing everyday workers a service they can trust</li>
-        <li>Delivering quality, consistency, and reliability directly to your doorstep</li>
-      </ul>
+  <!-- MISSION SECTION -->
+  <section id="mission" class="max-w-5xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold text-amber-300">Our Mission</h3>
+    <p class="mt-4 text-slate-300 leading-relaxed text-lg">Central Shine Mobile Detailing is more than a cleaning service — it's a commitment to restoring pride, confidence, and comfort through the vehicles that move our community. We believe detailing is an art, a science, and a craft guided by precision, care, and passion. We're here to make life easier for families, workers, business owners, and anyone who deserves a cleaner, fresher ride.</p>
+  </section>
 
-      <h3 class="text-xl font-semibold mt-6 mb-2">Community First</h3>
-      <p class="leading-relaxed text-slate-300">
-        Central Shine isn’t just a business — it’s a commitment to the community. We take pride in being a service people rely on, a brand that shows up with professionalism, and a craft that continues to evolve through passion and dedication.
-      </p>
-    </section>
-
-    <footer class="text-center mt-10 text-slate-500 text-sm">
-      © <span id="year"></span> Central Shine Mobile Detailing
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  <!-- SERVICES SECTION -->
+  <section id="services" class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold

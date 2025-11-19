@@ -1,153 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACS Detailing</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Central Shine Mobile Detailing — Our Mission</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen p-8">
+  <main class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-extrabold mb-6 text-amber-400">Central Shine Mobile Detailing</h1>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">ACSDETAILING</div>
+    <section class="bg-slate-800/60 p-6 rounded-2xl shadow-lg">
+      <h2 class="text-2xl font-bold mb-4">A Professional Who Serves the Community</h2>
+      <p class="mb-4 leading-relaxed text-slate-300">
+        At Central Shine Mobile Detailing, we believe auto detailing is more than cleaning a vehicle — it's an act of service. We help make life easier for busy families, rideshare drivers, business owners, and everyday workers who need their vehicles to look their best without losing valuable time.
+      </p>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">PACKAGES</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+      <h3 class="text-xl font-semibold mt-6 mb-2">Art. Science. Precision.</h3>
+      <p class="mb-4 leading-relaxed text-slate-300">
+        Auto detailing is a blend of craftsmanship and technical understanding. It's the art of restoring beauty, the science of using the right products and tools, and the precision of perfecting every surface — inside and out. Every detail matters, and every vehicle tells a story.
+      </p>
 
-        <div class="icons">
-            <a href="#"><i class="icon">🛒</i></a>
-            <a href="#"><i class="icon">🔍</i></a>
-        </div>
-    </header>
+      <h3 class="text-xl font-semibold mt-6 mb-2">What Drives Us</h3>
+      <ul class="list-disc pl-6 text-slate-300 space-y-2">
+        <li>Giving busy people their time back</li>
+        <li>Supporting rideshare and delivery drivers who rely on a clean workspace</li>
+        <li>Helping business owners maintain a professional image</li>
+        <li>Providing everyday workers a service they can trust</li>
+        <li>Delivering quality, consistency, and reliability directly to your doorstep</li>
+      </ul>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <img src="your-hero-image.jpg" class="hero-bg" alt="Car interior">
-
-        <div class="hero-content">
-            <h1>CAR DETAILING—FROM THE COMFORT<br>OF YOUR OWN HOME.</h1>
-            <p>SERVING WORCESTER, MA & BEYOND</p>
-            <a href="#" class="btn">BOOK ONLINE</a>
-        </div>
+      <h3 class="text-xl font-semibold mt-6 mb-2">Community First</h3>
+      <p class="leading-relaxed text-slate-300">
+        Central Shine isn’t just a business — it’s a commitment to the community. We take pride in being a service people rely on, a brand that shows up with professionalism, and a craft that continues to evolve through passion and dedication.
+      </p>
     </section>
 
-    <!-- WHY CHOOSE ME -->
-    <section class="why">
-        <h2>WHY CHOOSE ME?</h2>
-    </section>
+    <footer class="text-center mt-10 text-slate-500 text-sm">
+      © <span id="year"></span> Central Shine Mobile Detailing
+    </footer>
+  </main>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000;
-    color: white;
-}
-
-/* NAVBAR */
-.navbar {
-    width: 100%;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.icons .icon {
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-/* HERO SECTION */
-.hero {
-    position: relative;
-    height: 90vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-.hero-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.75;
-}
-
-.hero-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 50px;
-}
-
-.hero-content p {
-    font-size: 16px;
-    margin: 20px 0;
-    letter-spacing: 1.5px;
-}
-
-.btn {
-    background-color: #2A7AFE;
-    padding: 12px 25px;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-/* WHY SECTION */
-.why {
-    padding: 40px;
-    text-align: center;
-}
-
-.why h2 {
-    font-size: 24px;
-    font-weight: 700;
-}
